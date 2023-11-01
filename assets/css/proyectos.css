@@ -38,15 +38,32 @@ a:hover {
     color: #0055a5;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
+.btn-link {
+    font-family: 'Arial', sans-serif; /* Define una familia de fuentes */
+    font-size: 16px; /* Define un tamaño de fuente */
     background-color: #0077cc;
     color: #fff;
-    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    text-align: center; /* Alinea el texto al centro */
+    display: inline-block; /* Permite definir dimensiones al botón */
+    width: 150px; /* Asegura que todos los botones tengan el mismo ancho */
 }
+
+.btn-link:hover {
+    background-color: #0055a5;
+}
+
+.btn-link a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Hace que el enlace cubra todo el espacio del botón */
+}
+
 
 .btn:hover {
     background-color: #0055a5;

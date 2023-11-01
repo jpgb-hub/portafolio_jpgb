@@ -27,15 +27,18 @@ nav {
 }
 
 header {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    display: flex;          /* Convierte el header en un contenedor flex */
+    justify-content: flex-end;  /* Alinea el contenido al extremo derecho */
+    align-items: center;        /* Alinea el contenido verticalmente al centro */
 }
 
-header h1 {
-    font-size: 2em;
-    color: #222;
+
+header img {
+    max-width: 300px;   /* Establece el ancho máximo de la imagen */
+    height: auto;       /* Mantiene la relación de aspecto */
+    margin: 10px 20px;  /* Establece el margen alrededor de la imagen */
 }
+
 
 main {
     margin-bottom: 30px;
@@ -86,3 +89,44 @@ footer {
 .btn:hover {
     background-color: #0055a5;
 }
+
+.btn-link {
+    font-family: 'Arial', sans-serif; /* Define una familia de fuentes */
+    font-size: 16px; /* Define un tamaño de fuente */
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    text-align: center; /* Alinea el texto al centro */
+    display: inline-block; /* Permite definir dimensiones al botón */
+    width: 150px; /* Asegura que todos los botones tengan el mismo ancho */
+}
+
+.btn-link:hover {
+    background-color: #0055a5;
+}
+
+.btn-link a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Hace que el enlace cubra todo el espacio del botón */
+}
+
+
+.btn-link:hover {
+    background-color: #0055a5;  /* Color de fondo del botón al pasar el cursor sobre él */
+}
+
+.btn-link a {
+    color: #fff;                /* Color del enlace */
+    text-decoration: none;     /* Elimina el subrayado del enlace */
+}
+
+.btn-link a:hover {
+    color: #ddd;                /* Cambia el color del enlace al pasar el cursor sobre él */
+}
+
