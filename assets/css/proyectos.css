@@ -31,6 +31,7 @@ a {
     color: #0077cc;
     text-decoration: none; /* Removemos el subrayado */
     transition: color 0.3s ease; /* Suave transición al cambiar el color */
+    margin-top: 60px;
 }
 
 a:hover {
