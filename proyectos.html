@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,43 @@
     <link rel="stylesheet" href="/assets/css/proyectos.css">
     <title>Proyectos</title>
 </head>
+
 <body>
     <div class="container py-4">
-        <div class="container py-4">
-            <h2 class="mb-4">Mis proyectos Fullstack</h2>        
-            <div class="row">
-                <!-- Tarjeta de Proyecto Fullstack 1 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Actualización de página Web proyecto ONG Tetarte</h5>
-                            <p class="card-text">Aquí podrás encontrar el código fuente del proyecto que me permitió convertirme en Desarrollador Fullstack.</p>
-                            <p>Proyecto desarrollado en React <i class="fab fa-react"></i> y Python <i class="fab fa-python"></i></p>
-                            <a href="https://github.com/jpgb-hub/proyecto_final" target="_blank" class="btn btn-primary">Ver Proyecto</a>
-                        </div>
+        <h2 class="mb-4">Mis proyectos Fullstack</h2>
+        <div class="row">
+            <!-- Tarjeta de Proyecto Fullstack 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Actualización de página Web proyecto ONG Tetarte</h5>
+                        <p class="card-text">Aquí podrás encontrar el código fuente del proyecto que me permitió
+                            convertirme en Desarrollador Fullstack.</p>
+                        <p>Proyecto desarrollado en React <i class="fab fa-react"></i> y Python <i
+                                class="fab fa-python"></i></p>
+                        <a href="https://github.com/jpgb-hub/proyecto_final" target="_blank" class="btn btn-primary">Ver
+                            Proyecto</a>
                     </div>
                 </div>
-        
-                <!-- Tarjeta de Proyecto Fullstack 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Guía de Pokemon con consulta a PokeAPI</h5>
-                            <p class="card-text">Tu propia Pokedex! Consulta aquí los principales datos y estadísticas de los Pokemones de la región Kanto</p>
-                            <p>Proyecto desarrollado con Vue <i class="fab fa-vuejs"></i> y React  <i class="fab fa-react"></i></p>
-                            <a href="https://pokedex-virid-three-44.vercel.app/" target="_blank" class="btn btn-primary">Ver Proyecto</a>
-                        </div>
-                    </div>
-                </div>        
-                <!-- Añade más tarjetas según sea necesario, siguiendo el mismo patrón -->
             </div>
+
+            <!-- Tarjeta de Proyecto Fullstack 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Guía de Pokemon con consulta a PokeAPI</h5>
+                        <p class="card-text">Tu propia Pokedex! Consulta aquí los principales datos y estadísticas de
+                            los Pokemones de la región Kanto</p>
+                        <p>Proyecto desarrollado con Vue <i class="fab fa-vuejs"></i> y React <i
+                                class="fab fa-react"></i></p>
+                        <a href="https://pokedex-virid-three-44.vercel.app/" target="_blank" class="btn btn-primary">Ver
+                            Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Añade más tarjetas según sea necesario, siguiendo el mismo patrón -->
         </div>
-        
+
 
         <h2 class="mb-4">Mis proyectos de Análisis de Datos</h2>
 
@@ -50,13 +56,17 @@
                 <h5 class="card-title">Dashboard de Ventas de Videojuegos</h5>
             </div>
             <div class="card-body">
-                <p class="card-text">En este dashboard, podemos apreciar de manera general la situación del mercado global de los videojuegos, unidades vendidas por región, año y plataforma.</p>
-                <img src="./img/dashboard_1.jpg" alt="Dashboard de Ventas de Videojuegos" class="img-fluid img-dashboard">
+                <p class="card-text">Dashboard de Venta de videojuegos, por Región y Plataforma</p>
+                <p class="card-text">Haz clic en la imagen para ver el dashboard en detalle:</p>
+                <!-- Agrega el atributo data-bs-toggle y data-bs-target al elemento de la imagen -->
+                <img src="./img/dashboard_1.jpg" alt="Dashboard de Ventas de Videojuegos"
+                    class="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalDashboard1">
             </div>
         </div>
 
         <!-- Modal para Dashboard de Ventas de Videojuegos -->
-        <div class="modal fade" id="modalDashboard1" tabindex="-1" aria-labelledby="modalDashboard1Label" aria-hidden="true">
+        <div class="modal fade" id="modalDashboard1" tabindex="-1" aria-labelledby="modalDashboard1Label"
+            aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -76,13 +86,17 @@
                 <h5 class="card-title">Dashboard de Mortalidad Infantil</h5>
             </div>
             <div class="card-body">
-                <p class="card-text">En este dashboard, se muestra la mortalidad infantil y esperanza de vida por año y país, representados en un mapa.</p>
-                <img src="./img/dashboard_2.jpg" alt="Dashboard de Ventas de Videojuegos" class="img-fluid img-dashboard">
+                <p class="card-text">Mortalidad Infantil representada en un mapamundi</p>
+                <p class="card-text">Haz clic en la imagen para ver el dashboard en detalle:</p>
+                <!-- Agrega el atributo data-bs-toggle y data-bs-target al elemento de la imagen -->
+                <img src="./img/dashboard_2.jpg" alt="Dashboard de Mortalidad Infantil"
+                    class="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalDashboard2">
             </div>
         </div>
 
         <!-- Modal para Dashboard de Mortalidad Infantil -->
-        <div class="modal fade" id="modalDashboard2" tabindex="-1" aria-labelledby="modalDashboard2Label" aria-hidden="true">
+        <div class="modal fade" id="modalDashboard2" tabindex="-1" aria-labelledby="modalDashboard2Label"
+            aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -97,10 +111,11 @@
         </div>
 
         <a href="index.html" class="btn btn-link mt-4">Volver</a>
-    
+
     </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
