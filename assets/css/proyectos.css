@@ -78,8 +78,26 @@ footer {
 }
 
 /* Estilo para las imágenes, en caso de que quieras agregarle algo */
-img {
-    max-width: 100%; /* Aseguramos que las imágenes no se desborden del contenedor */
-    display: block;  /* Las imágenes ocuparán todo el ancho posible */
-    margin: 10px 0;  /* Espacio arriba y abajo de la imagen */
+/* En tu archivo CSS personalizado */
+.card-body {
+    display: flex;
+    justify-content: space-between; /* Esto separa el contenido y la imagen */
+}
+
+.card-content {
+    /* Ajusta el espacio que el contenido debe ocupar, por ejemplo */
+    flex-grow: 1; /* Permite que el contenido crezca para llenar el espacio */
+}
+
+.card-img-right {
+    /* Esto es opcional, dependiendo del ancho que desees para tu imagen */
+    flex-basis: 200px; /* Establece el ancho inicial de la imagen */
+    display: flex;
+    align-items: center; /* Esto centrará la imagen verticalmente si es más corta que el contenido */
+}
+
+.img-dashboard {
+    width: 100%; /* Hace que la imagen sea responsiva dentro de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-width: 200px; /* El ancho máximo que la imagen puede tener */
 }
