@@ -6,32 +6,31 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Puedes cambiar esto a la fuente que prefieras */
+    font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
 .container {
-    max-width: 1100px; /* Limitamos el ancho para que el contenido no se estire demasiado en pantallas grandes */
-    margin: 0 auto;   /* Centramos el contenedor */
-    padding: 20px;   /* Un poco de padding para que el contenido no toque los bordes */
-    background-color: #ffffff; /* Fondo blanco para el contenedor */
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.1); /* Sombra suave alrededor del contenedor para darle un poco de profundidad */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-size: 1.5em;
-    margin-bottom: 20px; /* Espacio debajo de los h2 para una mejor separación */
-    border-bottom: 1px solid #ddd; /* Una línea debajo del título para separarlo visualmente */
-    padding-bottom: 10px; /* Espacio entre el texto y la línea */
-    margin-top: 40px; /* Espacio encima para separar de otros contenidos */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 40px;
 }
 
 a {
     color: #0077cc;
-    text-decoration: none; /* Removemos el subrayado */
-    transition: color 0.3s ease; /* Suave transición al cambiar el color */
-    margin-top: 60px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -39,65 +38,62 @@ a:hover {
 }
 
 .btn-link {
-    font-family: 'Arial', sans-serif; /* Define una familia de fuentes */
-    font-size: 16px; /* Define un tamaño de fuente */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
     background-color: #0077cc;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 10px;
     transition: background-color 0.3s;
-    text-align: center; /* Alinea el texto al centro */
-    display: inline-block; /* Permite definir dimensiones al botón */
-    width: 150px; /* Asegura que todos los botones tengan el mismo ancho */
+    text-align: center;
+    display: inline-block;
+    width: 150px;
 }
 
-.btn-link:hover {
+.btn-link:hover,
+.btn-primary:hover {
     background-color: #0055a5;
 }
 
-.btn-link a {
+.btn-link a,
+.btn-primary {
     color: #fff;
     text-decoration: none;
-    display: block; /* Hace que el enlace cubra todo el espacio del botón */
-}
-
-
-.btn:hover {
-    background-color: #0055a5;
+    display: block;
 }
 
 footer {
-    margin-top: 40px; /* Espacio entre el contenido y el pie de página */
+    margin-top: 40px;
     font-size: 0.85em;
-    color: #666; /* Un color un poco más claro para el pie de página */
-    border-top: 1px solid #ddd; /* Una línea encima del footer */
-    padding-top: 10px; /* Espacio entre la línea y el texto del pie de página */
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
 }
 
-/* Estilo para las imágenes, en caso de que quieras agregarle algo */
-/* En tu archivo CSS personalizado */
-.card-body {
-    display: flex;
-    justify-content: space-between; /* Esto separa el contenido y la imagen */
+/* Ajustes de responsividad */
+.card {
+    margin-bottom: 20px; /* Espacio entre las tarjetas para dispositivos móviles */
 }
 
-.card-content {
-    /* Ajusta el espacio que el contenido debe ocupar, por ejemplo */
-    flex-grow: 1; /* Permite que el contenido crezca para llenar el espacio */
-}
-
-.card-img-right {
-    /* Esto es opcional, dependiendo del ancho que desees para tu imagen */
-    flex-basis: 200px; /* Establece el ancho inicial de la imagen */
-    display: flex;
-    align-items: center; /* Esto centrará la imagen verticalmente si es más corta que el contenido */
-}
-
+/* Estilos generales */
 .img-dashboard {
-    width: 100%; /* Hace que la imagen sea responsiva dentro de su contenedor */
+    width: 100%; /* Esto hará que la imagen sea responsiva y se ajuste al ancho de su contenedor */
     height: auto; /* Mantiene la relación de aspecto */
-    max-width: 200px; /* El ancho máximo que la imagen puede tener */
+    object-fit: cover; /* Asegúrate de que la imagen cubra el área sin distorsionarse */
+}
+
+/* Media query para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+    .img-dashboard {
+        max-height: 200px; /* Puedes ajustar esto según tus necesidades */
+    }
+}
+
+/* Media query para pantallas medianas a grandes (más de 768px de ancho) */
+@media (min-width: 768px) {
+    .img-dashboard {
+        max-height: 250px; /* Altura máxima para pantallas más grandes */
+    }
 }
