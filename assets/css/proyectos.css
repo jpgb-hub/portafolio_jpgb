@@ -87,7 +87,8 @@ footer {
 /* Media query para pantallas pequeñas (menos de 768px de ancho) */
 @media (max-width: 767px) {
     .img-dashboard {
-        max-height: 200px; /* Puedes ajustar esto según tus necesidades */
+        max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
     }
 }
 
